@@ -5,7 +5,7 @@ SUBDIRS= \
 
 bin_PROGRAMS = glabels-3 glabels-3-batch
 
-INCLUDES = \
+glabels_3_CPPFLAGS = \
 	-I$(top_srcdir)						\
 	-I$(top_builddir)					\
 	-I$(top_srcdir)/libglabels				\
@@ -23,7 +23,7 @@ INCLUDES = \
 	-DGLABELS_DATA_DIR=\""$(datadir)/$(GLABELS_BRANCH)"\"	\
 	-DGLABELS_ICON_NAME=\""$(GLABELS_BRANCH)\""		\
 	-DG_LOG_DOMAIN=\""glabels\""
-
+glabels_3_batch_CPPFLAGS = $(glabels_3_CPPFLAGS)
 glabels_3_LDFLAGS = -export-dynamic
 
 glabels_3_LDADD = 				\

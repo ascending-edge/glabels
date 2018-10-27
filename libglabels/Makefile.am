@@ -1,6 +1,6 @@
 configdir = $(datadir)/$(LIBGLABELS_BRANCH)
 
-INCLUDES = \
+libglabels_3_0_la_CPPFLAGS = \
 	$(LIBGLABELS_CFLAGS)				\
 	-DLIBGLABELS_CONFIG_DIR=\""$(configdir)"\" \
 	$(DISABLE_DEPRECATED_CFLAGS)

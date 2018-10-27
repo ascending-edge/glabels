@@ -1,6 +1,6 @@
 configdir = $(datadir)/$(LIBGLBARCODE_BRANCH)
 
-INCLUDES = \
+libglbarcode_3_0_la_CPPFLAGS = \
 	$(LIBGLBARCODE_CFLAGS)				\
 	-DLIBGLBARCODE_CONFIG_DIR=\""$(configdir)"\" \
 	$(DISABLE_DEPRECATED_CFLAGS)
